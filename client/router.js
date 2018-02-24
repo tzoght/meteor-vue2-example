@@ -27,7 +27,7 @@ export default new Router({
         {
             path: '/',
             name: 'Melimelo',
-            component: Melimelo
+            component: Melimelo,
         }
 
     ]

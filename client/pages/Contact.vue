@@ -3,7 +3,7 @@
         <h1>Contact Me</h1>
         <p>
         <ul>
-            <li>Email: </li>
+            <li>Email:{{email}} </li>
             <li>Website: </li>
         </ul>
         </p>

@@ -4,19 +4,16 @@
             You pressed the button {{count}} time(s).
         </p>
         <my-button :label="buttonLabel" @click="addOne"></my-button>
-        <p>
-            Learn more about the vue integration <a href="https://github.com/Akryum/meteor-vue-component">on GitHub</a>.
-        </p>
-        <test></test>
-        <test2></test2>
+        <my-table></my-table>
         <chat></chat>
     </div>
 </template>
 
 <script>
-    import Chat from '../components/Chat.vue';
-    import Test from '../components/Test.vue';
+    import Chat from '../components/Chat';
+    import Test from '../components/Test';
     import {Session} from 'meteor/session';
+    import MyTable from "../components/MyTable";
 
     Session.setDefault("counter", 0);
 
@@ -51,6 +48,7 @@
             }
         },
         components: {
+            MyTable,
             Chat,
             Test,
         },
